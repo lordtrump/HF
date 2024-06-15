@@ -1,0 +1,74 @@
+proxies:
+  - name: 🇸🇬 VIP 🟢
+    server: 162.159.140.158
+    port: 80
+    type: vless
+    uuid: 6d242fee-372b-4e7c-8d5e-2a9f2da35444
+    cipher: auto
+   # tls: true
+  #  skip-cert-verify: true
+    servername: vip07-vless.globalssh.com
+    network: ws
+    ws-opts:
+      path: /vless-ws
+      headers:
+        Host: vip07-vless.globalssh.com
+    udp: true
+  - name: 🇸🇬 GS 🟢
+    server: 162.159.140.158
+    port: 443
+    type: trojan
+    password: 98e3ac25-70ae-4a38-b0e8-98481dcc61cb
+    skip-cert-verify: true
+    sni: trojan-sg01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: trojan-sg01.globalssh.xyz
+    udp: true
+  - name: 🇮🇩 ID 🟢
+    server: 162.159.140.158
+    port: 443
+    type: trojan
+    password: 2f05bfab-3cae-4069-a7c4-0edae0aaa6ac
+    skip-cert-verify: true
+    sni: trojan-wh-id01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: trojan-wh-id01.globalssh.xyz
+    udp: true
+  - name: 🇩🇰 ADV 🟢
+    server: 162.159.140.158
+    port: 443
+    type: vmess
+    uuid: 93a01b51-44e2-4fd6-b96d-6dabcae40124
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vmess-adv-de01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: vmess-adv-de01.globalssh.xyz
+    udp: true
+  - name: 🇯🇵 SIS 🟢
+    server: 162.159.140.158
+    port: 443
+    type: vmess
+    uuid: 8a12b8e7-2aa3-4b62-a532-df9d52be0150
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vmess-sis-jp01.globalssh.xyz
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: vmess-sis-jp01.globalssh.xyz
+    udp: true

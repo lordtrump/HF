@@ -1,1 +1,0 @@
-trojan://6d242fee-372b-4e7c-8d5e-2a9f2da35444@vip07-trojan.globalssh.com:443?peer=vip07-trojan.globalssh.com&sni=vip07-trojan.globalssh.com&alpn=http1.1#willtzy-vip_troja
